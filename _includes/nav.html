@@ -1,0 +1,7 @@
+<p class="header-name"">Joe McDonough</p>
+<nav>
+    {% for item in site.data.navigation %}
+      <a href="{{ item.link }}" {% if page.url == item.link %}class="current nav-link" {% else %}class="nav-link"{% endif %}>{{ item.name }} </a>
+    {% endfor %}
+    <!-- <a class="nav-link" href="https://sites.google.com/umn.edu/umn-scas-seminar/">Seminar</a> -->
+</nav>
